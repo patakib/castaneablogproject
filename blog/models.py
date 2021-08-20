@@ -2,7 +2,6 @@ from django.db import models
 from django.utils import timezone
 from ckeditor.fields import RichTextField
 
-
 class Post(models.Model):
     STATUS_CHOICES = (
             ('draft', 'Draft'),
