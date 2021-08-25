@@ -1,18 +1,29 @@
 {% extends "blog/base.html" %}
 
-{% block title %}CASTANEA BLOG{% endblock %}
+{% block title %}Castanea Blog{% endblock %}
 
 {% block content %}
-<h1>Castanea Blog</h1>
-{% for post in posts %}
-	<h2>
-		<a href="{{ post.get_absolute_url }}">
-			{{ post.title }}
-		</a>
-	</h2>
-	<p class="date">
-		Published {{ post.publish }}
-	</p>
-	{{ post.body|safe|truncatewords:40|linebreaks }}
-{% endfor %}
+<div class="container">
+	{% for post in posts %}
+		{% if forloop.counter0|divisibleby:"3" %}
+			<div class="row">
+		{% endif %}
+			<div class="col-12 col-sm-6 col-lg-4" class="postItem">
+				<h1>
+					<a href="{{ post.get_absolute_url }}">
+						{{ post.title }}
+					</a>
+				</h1>
+				<p class="postBody">
+				{{ post.body|safe|truncatewords:40 }}
+				</p>
+				<p class="date">
+					{{ post.publish }}
+				</p>
+			</div>
+		{% if forloop.counter|divisibleby:"3" %}
+			</div>
+		{% endif %}
+	{% endfor %}
+</div>
 {% endblock %}

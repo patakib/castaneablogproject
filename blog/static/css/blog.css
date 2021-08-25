@@ -1,0 +1,90 @@
+html {
+	font-family: sans-serif;
+	font-size: 6px;
+	}
+
+#content {
+	padding-top: 15vh;
+	}
+
+body {
+	background-color: #252422;
+    	color: #fffcf2;
+    }
+
+.navbar {
+      	background-color: #758e4f !important;
+      }
+
+#projectName {
+      	font-size: clamp(25px,2.5vw,30px);
+	font-family: 'Playfair Display SC', serif;
+	color: #403d39;
+	text-decoration: none;
+	margin-left: 1vw;
+	}
+
+@media screen and (min-width: 992px){
+	#projectName {
+		margin-right: 3vw;
+		        }
+	}
+
+#castanea-img2 {
+	width: clamp(100px,3vw,150px);
+	}
+
+.nav-item {
+	color: #fffcf2 !important;
+	font-size: 3vh;
+	margin-left: 4vw;
+	font-family: 'Roboto', sans-serif !important;
+	}
+
+.nav-item:hover {
+	color: #403d39 !important;
+	}
+
+.navbar-toggler {
+	background-color: #758e4f !important;
+	}
+
+.col-lg-4 {
+	background-color: #403d39;
+	border: 4px solid #252422;
+	border-radius: 1vh;
+	font-size: 2.5vh;
+	text-align: center;
+	min-height: 40vh;
+	margin-bottom: 4vh;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	color: #fffcf2;
+	}
+
+.col-lg-4:hover {
+	}
+
+h1 {
+	font-size: 4rem;
+	}
+a {
+	color: #fffcf2;
+	}
+
+a:hover {
+	text-decoration: none;
+	color: #758e4f;
+	}
+a:visited {
+	text-decoration: none;
+	}
+
+.postBody {
+	font-size: 3rem !important;
+	}
+
+.date {
+	font-size: 2rem;
+	font-style: italic;
+	}
